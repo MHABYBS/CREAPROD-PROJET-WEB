@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charset="utf-8" />
+       <title>login</title>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <style type="text/css">
+       	.login{
+       		width: 500px ;
+       		height: 400px ;
+       		margin-top: 150px ;
+       		margin-left: 450px ;
+       		/*background: rgba(15,15,80,0.7);*/
+       		background-color: #eae7e0 ;
+       		border-radius: 15px ;
+       		text-align: center;
+
+       	}
+       	.login img{
+       		width: 120px ;
+       		height: 120px ;
+       		margin-top: -60px ;
+       		margin-bottom: 30px ;
+       	}
+       	input[type='text'] , input[type='password']{
+       		width: 240px ;
+       		height: 44px;
+       		margin-bottom: 20px ;
+       		font-size: 18px ;
+       		border: 1px solid #000 ;
+       		padding-left: 45px ;
+       		border-color: #588d9b ;
+       		border-radius: 8px ;
+       	}
+       	input[type='submit']
+       	{
+       		padding: 15px 25px ;
+       		background: #588d9b ;
+       		color: #fff  ;
+       		border: none; ;
+       		margin-bottom: 20px ;
+       		cursor: pointer; ;
+       		border-radius: 8px ;
+       	}
+       	a{
+       		text-decoration: none;
+       		color: #588d9b  ;
+       	}
+       	a:hover{
+       		color: #150;
+       	}
+       	.cust{
+       		position: absolute;
+       		background: #fff ;
+       		margin-right: 25px ;
+       		margin-top: 1px ;
+       		width: 44px ;
+       		height: 36px ;
+       		padding-top: 0px ;
+       		border: 1px solid #fff ;
+       		color: #588d9b ;
+       		border-left-color: 1px solid #588d9b ;
+       	}
+       	.login span{
+       		border: none;
+       		color: #588d9b ;
+       		background-color: #eae7e0 ;
+       		font-size: 18px ;
+       	}
+       	.login span:hover{
+       		border: none;
+       		color: #fff ;
+       		background-color: #588d9b ;
+       		font-size: 18px ;
+       		border-radius: 8px ;
+       		cursor: pointer;
+       	}
+
+       	.login p{
+       		font-size: 16px ;
+       		color: gray ;
+       	}
+
+      	.register{
+       		display:none ;
+       		width: 700px ;
+       		height: 900px ;
+       		margin-top: 50px ;
+       		margin-left: 450px ;
+       		/*background: rgba(15,15,80,0.7);*/
+       		background-color: #eae7e0 ;
+       		border-radius: 15px ;
+       		text-align: center;
+       	}
+       	.register form table {
+       		margin: auto;
+       	}
+       	.register form table td{
+       		text-align: left;
+       		color:  #588d9b ;
+       		font-size: 18px ;
+       	}
+
+       	.register h1{
+       		color:  #588d9b ;
+       	}
+       	.register  input[type='text'] {
+       		width: 450px ;
+       	}
+
+       	.register  input[type='password'] {
+       		width: 450px ;
+       	}
+
+       	}
+
+       	.register  input[type='password']{width: 450px ;}
+
+       .register span{
+       		border: none;
+       		color: #588d9b ;
+       		background-color: #eae7e0 ;
+       		font-size: 18px ;
+       	}
+       	.register span:hover{
+       		border: none;
+       		color: #fff ;
+       		background-color: #588d9b ;
+       		font-size: 18px ;
+       		border-radius: 8px ;
+       		cursor: pointer;
+       	}
+
+       </style>
+    </head>
+   	<body>
+   		<div class="login" id="login">
+   			<img src="avatar.png" >
+   			<form>
+   				 <div class="form-input">
+   				 	<i class="fa fa-user fa-2x cust" aria-hidden="true"></i>
+   				 	<input type="text" name="uname" placeholder="Entrez votre nom ou email"><br> 
+   				 	<i class="fa fa-lock fa-2x cust" aria-hidden="true"></i>
+   				 	<input type="password" name="password" placeholder="Entrez votre mot de passe "><br>
+   				 	<input type="submit" name="submit" value="LOGIN"><br>
+                   <a href="">mot de passe oublié ?</a>
+                   <p>vous n'avez pas de compte ?<span onclick="myFunction()">s'inscrire</span></p>
+   				 </div>  				
+   			</form>
+   		</div>
+       <script type="text/javascript">
+       	 function myFunction() {
+			  document.getElementById("login").style.display = "none";
+			  document.getElementById("regist").style.display = "block";
+			}
+       </script>
+
+   		<div class="register" id="regist">
+   			<h1>Creer un compte</h1>
+   			<form>
+   				<table>
+   					<tr>
+   						<td>Nom </td>
+   					</tr>
+   					<tr>
+   						<td>
+   							 <i class="fa fa-user fa-2x cust" aria-hidden="true"></i>
+   				 	         <input type="text" name="name" placeholder="Entrez votre nom"><br>
+   						</td>
+   					</tr>
+   					<tr>
+   						<td>Prenom </td>
+   					</tr>
+   					<tr>
+   						<td>
+   							 <i class="fa fa-user fa-2x cust" aria-hidden="true"></i>
+   				 	         <input type="text" name="fname" placeholder="Entrez votre prenom"><br>
+   						</td>
+   					</tr>
+   					<tr>
+   						<td>Email </td>
+   					</tr>
+   					<tr>
+   						<td>
+   							 <i class="fa fa-envelope fa-2x cust" aria-hidden="true"></i>
+   				 	         <input type="text" name="uname" placeholder="Entrez votre email"><br>
+   						</td>
+   					</tr>
+   					<tr>
+   						<td>Mot de passe</td>
+   					</tr>
+   					<tr>
+   						<td>
+   							<i class="fa fa-lock fa-2x cust" aria-hidden="true"></i>
+   							<input type="password" name="password" placeholder="Entrez votre mot de passe "><br>
+   						</td>
+   					</tr>
+   					<tr>
+   						<td>Confirmer mot de passe</td>
+   					</tr>
+   					<tr>
+   						<td>
+   							<i class="fa fa-lock fa-2x cust" aria-hidden="true"></i>
+   							<input type="password" name="password" placeholder="Confirmer votre mot de passe "><br>
+   						</td>
+   					</tr>
+   					<tr>
+   						<td>Adresse </td>
+   					</tr>
+   					<tr>
+   						<td>
+   							<i class="fa fa-map-marker fa-2x cust" aria-hidden="true"></i>
+   							<input type="text" name="address" placeholder="Entrer votre adresse "><br>
+   						</td>
+   					</tr>
+   					<tr>
+   						<td>Telephone </td>
+   					</tr>
+   					<tr>
+   						<td>
+   							<i class="fa fa-phone fa-2x cust" aria-hidden="true"></i>
+   							<input type="text" name="phone" placeholder="Entrer votre telephone "><br>
+   						</td>
+   					</tr>
+   					<tr>
+   						<td colspan="2" style="margin-left: 250px ;"><input type="submit" name="submit" value="S'inscrire'"></td>
+   					</tr>
+   					<tr>
+   						<td colspan="2"><p style="color: gray">vous avez dejà un compte ?<span onclick="Seconnecter()"> login</span></p></td>
+   					</tr>
+   				</table>
+   			</form>
+   		</div>
+   		 <script type="text/javascript">
+       	 function Seconnecter() {
+			  document.getElementById("login").style.display = "block";
+			  document.getElementById("regist").style.display = "none";
+			}
+       </script>
+   	</body>
+
+</html>
