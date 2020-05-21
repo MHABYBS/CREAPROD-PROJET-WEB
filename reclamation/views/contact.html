@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet"type= "text/css"href= "contact.css">
+		<link rel="stylesheet" href="https://fonts.google.com/specimen/Crete+Round?selection.family=Crete+Round">
+		<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+	</head>
+	<header>
+        <div class="wrapper">
+        <h1>Carbone Restorant<span class="orange"> *</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="About.html">A propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+			</ul>
+			<button class="log"><a href = "login.html">Se connecter</a></button>
+        </nav>
+     </div>
+
+    </header>
+	<body>
+
+		
+		<section id="contact">
+			<div class="wrapper">
+		<h2> Contact us </h2>
+		<form class="le_cont" method="POST" action="ajouterreclam.php">
+			<input type="number" name="id" placeholder="Votre id" id="id" /><br /><br />
+			<input type="text" name="nom" placeholder="Votre nom" id="name" /><br /><br />
+			<input type="text" name="prenom" placeholder="Votre prenom" id="firstname" /><br /><br />
+			<input type="email" name="mail" placeholder="Votre email" id="email" /><br /><br />
+			<input type="text" name="raison" placeholder="Votre raison" id="fact" /><br /><br />
+			<textarea name="msg" placeholder="Votre msg" id="msg"></textarea><br /><br />
+			<input type="date" name="date"  id="date" /><br /><br />
+			<input type="submit" value="Envoyer " name="Envoyer" class="button"/>
+		</form>
+		</div>
+		</section>
+	</body>
+</html>
